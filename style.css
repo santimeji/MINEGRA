@@ -1,47 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
     background: linear-gradient(to bottom right, #ffe0ec, #f9d6f7);
     color: #5e2a4d;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    text-align: center;
+    min-height: 100vh;
     margin: 0;
+    padding: 20px;
 }
+
 .container {
-    background-color: #ffffffb3;
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    max-width: 600px;
+    background-color: #ffffffcc;
+    padding: 25px 20px;
+    border-radius: 24px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
 }
+
 h1 {
-    font-size: 2.5em;
+    font-size: 2.2em;
     color: #e91e63;
+    margin-bottom: 10px;
 }
+
 .heart-tree {
-    font-size: 2em;
-    animation: float 2s ease-in-out infinite;
-    margin: 20px 0;
+    font-size: 1.8em;
+    margin: 15px 0;
+    animation: float 3s ease-in-out infinite;
 }
+
 @keyframes float {
     0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+    50% { transform: translateY(-8px); }
 }
+
 .message {
-    font-size: 1.2em;
+    font-size: 1.05em;
     line-height: 1.6;
-    margin: 20px 0;
+    margin: 15px 0;
+    text-align: justify;
 }
+
 .timer {
-    font-size: 1.5em;
+    font-size: 1.1em;
     color: #d63384;
     margin-top: 20px;
 }
+
 .footer {
     margin-top: 30px;
     font-style: italic;
     color: #b3125d;
 }
+
+@media (max-width: 480px) {
+    h1 { font-size: 1.8em; }
+    .message, .timer { font-size: 1em; }
+    .container { padding: 20px 15px; }
+}
+.heartbeat {
+    display: inline-block;
+    animation: beat 1s infinite;
+    transform-origin: center;
+  }
+  
+  @keyframes beat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+  }
