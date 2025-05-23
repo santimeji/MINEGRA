@@ -1,5 +1,3 @@
-
-// Fecha de inicio del amor
 const startDate = new Date("2024-12-06T00:00:00");
 const timerElement = document.getElementById("timer");
 
@@ -12,7 +10,7 @@ function updateTimer() {
     const minutes = Math.floor((diff / (1000 * 60)) % 60);
     const seconds = Math.floor((diff / 1000) % 60);
 
-    timerElement.textContent = `Hemos estado juntos por: ${days} días, ${hours} horas, ${minutes} minutos y ${seconds} segundos 💞`;
+    timerElement.innerHTML = `<strong>HEMOS ESTADO JUNTOS POR: <br>${days} días, ${hours} horas, ${minutes} minutos y ${seconds} segundos 💞</strong>`;
 }
 
 setInterval(updateTimer, 1000);
