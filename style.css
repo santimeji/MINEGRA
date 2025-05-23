@@ -1,0 +1,47 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom right, #ffe0ec, #f9d6f7);
+    color: #5e2a4d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    margin: 0;
+}
+.container {
+    background-color: #ffffffb3;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+}
+h1 {
+    font-size: 2.5em;
+    color: #e91e63;
+}
+.heart-tree {
+    font-size: 2em;
+    animation: float 2s ease-in-out infinite;
+    margin: 20px 0;
+}
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+.message {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+.timer {
+    font-size: 1.5em;
+    color: #d63384;
+    margin-top: 20px;
+}
+.footer {
+    margin-top: 30px;
+    font-style: italic;
+    color: #b3125d;
+}
